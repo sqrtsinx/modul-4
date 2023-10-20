@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Gaya untuk elemen loading screen */
+        #loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+            animation: fadeIn 2s forwards, fadeOut 2s 2s forwards;
+        }
+
+        /* Gaya untuk elemen .container */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            animation: spin 4s reverse;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        p {
+            font-size: medium;
+            line-height: 1.5;
+            color: whitesmoke;
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-image: url('883505.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .id {
+            border: 5px outset black;
+            background-color: transparent;
+            text-align: center;
+            font-size: medium;
+            font-family: Arial, Helvetica, sans-serif;
+            flex-grow: 1;
+        }
+
+        .lyrics {
+            border: 5px outset black;
+            background-color: transparent;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+            flex-grow: 1;
+        }
+
+        .rainbow {
+            border: 5px outset black;
+            background-color: transparent;
+            text-align: center;
+            font-size: small;
+            font-family: Arial, Helvetica, sans-serif;
+            flex-grow: 1;
+        }
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+    <title>105221030_MI_CS21_PW</title>
+</head>
+<body>
+    <!-- Elemen loading screen -->
+    <div id="loading-screen">
+        <p>Loading...</p>
+    </div>
+
+    <!-- Konten utama -->
+    <h1 style="color: antiquewhite; animation: blink 2s infinite ;">いらっしゃい！</h1>
+    <div class="container">
+        <div class="id">
+            <h2 style="color: antiquewhite; animation: infinite blink;"><b>The bigger they are, the bigger they scream</b></h2>
+            <!--Hasil image-->
+            <img src="integralngakak.png" alt="Example :3">
+        </div>
+     
+        <div class="lyrics">
+            <h2 style="color: antiquewhite;"><i>Here's the lyrics for Iwan Fals : Aku Bukan Pilihan</i></h2>
+            <audio controls src="Iwan Fals-Aku Bukan Pilihan.mp3"></audio>
+            <!--untuk paragraf berupa lirik untuk lagu tersebut-->
+            <p><i>
+                Kini ku mengungkap tanya <br>
+                Siapakah dirinya <br>
+                Yang mengaku kekasihmu itu <br>
+                Aku tak bisa memahami <br>
+                
+                Ketika malam tiba <br>
+                Ku rela kau berada <br>
+                Dengan siapa kau melewatinya <br>
+                Aku tak bisa memahami <br>
+                
+                Aku lelaki tak mungkin <br>
+                Menerimamu bila <br>
+                Ternyata kau mendua <br>
+                Membuatku terluka <br>
+                
+                Tinggalkan saja diriku <br>
+                Yang tak mungkin menunggu <br>
+                Jangan pernah memilih <br>
+                Aku bukan pilihan <br>
+               </i>
+            </p>
+        </div>
+        <div class="rainbow">
+            <h2 style="color: antiquewhite;"><i>the favorite things i do</i></h2>
+            <img height="200" width="320" src="wallpaperflare.com_wallpaper (5).jpg" alt="pop">
+        </div>
+    </div>
+</body>
+</html>
